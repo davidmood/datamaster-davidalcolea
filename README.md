@@ -53,6 +53,10 @@ Abaixo, demonstramos a utilização do back-end para fazer perguntas sobre os da
 contidos na tabela de metadados:
 
 ![App Screenshot](https://uploaddeimagens.com.br/images/004/792/523/full/imagem_2024-06-04_191330501.png?1717539241)
+
+**Dashboard utilizado para monitoramento de chamadas bem sucedidas**
+![App Screenshot](https://uploaddeimagens.com.br/images/004/792/557/full/imagem_2024-06-04_200602265.png?1717542394)
+
 ## III - Explicação sobre o case desenvolvimento
 
 Atualmente, a maioria das empresas busca ser “data-driven”, ou seja, tomar decisões
@@ -199,15 +203,6 @@ empresa.
 
 Esses passos irão garantir uma evolução contínua da solução, adaptando-se às
 demandas dinâmicas do ambiente de descoberta de dados em linguagem natural.
-## Variáveis de Ambiente
-
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu configs.ipynb
-
-`os.environ["OPENAI_API_KEY"] = ""`
-
-`os.environ["LANGCHAIN_API_KEY"] = ""`
-
-
 ## Instalação
 
 O Databricks Community foi utilizado para o desenvolvimento deste case. Para acessar os dados de teste criados, é necessário importar o arquivo .csv para o seguinte caminho dentro do DBFS.
@@ -219,7 +214,23 @@ Arquivo CSV:
 ```bash
 tabela_metadados.csv
 ```
+
+**Importar o arquivo de notebooks**
+
+Arquivo .DBC
+```bash
+custom-llm-dm.dbc
+```
     
+## Variáveis de Ambiente
+
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu configs.ipynb
+
+`os.environ["OPENAI_API_KEY"] = ""`
+
+`os.environ["LANGCHAIN_API_KEY"] = ""`
+
+
 ## Autores
 
 - [@davidmood](https://www.github.com/davidmood)
