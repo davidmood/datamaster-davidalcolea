@@ -128,7 +128,7 @@ utilizadas as metodologias Blueprint e o Canva de proposta de valor.
 
 ## IV - Melhorias e Considerações Finais
 
-Durante a implementação do projeto, alcançamos foi alncançado diversos resultados significativos que contribuíram para a criação de uma interface simplificada, permitindo aos usuários da empresa solicitar dados em linguagem natural. A integração bem-sucedida com a LLM (Large Language Model) do OpenAI por meio de chamadas de API na plataforma
+Durante a implementação do projeto, foi alcançado diversos resultados significativos que contribuíram para a criação de uma interface simplificada, permitindo aos usuários da empresa solicitar dados em linguagem natural. A integração bem-sucedida com a LLM (Large Language Model) do OpenAI por meio de chamadas de API na plataforma
 Databricks e o uso eficaz da biblioteca LangChain em Python foram os pilares do
 sucesso.
 
