@@ -1,0 +1,35 @@
+while true
+do
+    n=$((RANDOM % 6))
+
+    if [ "$n" -eq 0 ]; then
+        cliclick m:500,930
+        cliclick c:500,930
+        echo "Chrome"
+    elif [ "$n" -eq 1 ]; then
+        cliclick m:130,930
+        cliclick c:130,930
+        echo "Finder"
+    elif [ "$n" -eq 2 ]; then
+        cliclick m:200,930
+        cliclick c:200,930
+        echo "Teams"
+    elif [ "$n" -eq 3 ]; then
+        cliclick m:280,930
+        cliclick c:280,930
+        echo "Outlook"
+    elif [ "$n" -eq 4 ]; then
+        cliclick m:580,930
+        cliclick c:580,930
+        echo "Excel"
+    else
+        cliclick m:1200,930
+        cliclick c:1200,930
+        echo "Bruno"
+    fi
+
+    tempo=$((100 + RANDOM % 161))
+    echo "Aguardando $tempo segundos..."
+
+    sleep $tempo
+done
