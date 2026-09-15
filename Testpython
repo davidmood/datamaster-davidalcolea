@@ -38,5 +38,17 @@ do
     tempo=$((100 + RANDOM % 161))
     echo "Aguardando $tempo segundos..."
 
-    sleep $tempo
+    fim=$((SECONDS + tempo))
+
+    while [ "$SECONDS" -lt "$fim" ]
+    do
+        espera=$((10 + RANDOM % 21))
+        sleep "$espera"
+
+        x=$((100 + RANDOM % 1200))
+        y=$((100 + RANDOM % 700))
+
+        cliclick m:$x,$y
+        echo "Mouse: $x,$y"
+    done
 done
