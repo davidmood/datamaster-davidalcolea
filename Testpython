@@ -1,10 +1,10 @@
 while true
 do
-    n=$((RANDOM % 6))
+    n=$((RANDOM % 7))
 
     while [ "$n" -eq "$ultimo" ]
     do
-        n=$((RANDOM % 6))
+        n=$((RANDOM % 7))
     done
 
     ultimo=$n
@@ -13,26 +13,61 @@ do
         cliclick m:500,930
         cliclick c:500,930
         echo "Chrome"
+
     elif [ "$n" -eq 1 ]; then
         cliclick m:130,930
         cliclick c:130,930
         echo "Finder"
+
     elif [ "$n" -eq 2 ]; then
         cliclick m:200,930
         cliclick c:200,930
         echo "Teams"
+
     elif [ "$n" -eq 3 ]; then
+        echo "Outlook"
         cliclick m:280,930
         cliclick c:280,930
-        echo "Outlook"
+        sleep 2
+
+        cliclick m:170,110
+        cliclick c:170,110
+        sleep 4
+
+        cliclick m:720,260
+        cliclick c:720,260
+        cliclick t:"TESTE AUTOMATIZADO - ASSUNTO"
+
+        cliclick m:640,360
+        cliclick c:640,360
+        cliclick t:"Este e um texto de teste para validar a automacao do Outlook."
+
+        cliclick m:740,110
+        cliclick c:740,110
+        sleep 2
+
+        cliclick m:740,535
+        cliclick c:740,535
+
     elif [ "$n" -eq 4 ]; then
         cliclick m:580,930
         cliclick c:580,930
         echo "Excel"
-    else
+
+    elif [ "$n" -eq 5 ]; then
         cliclick m:1200,930
         cliclick c:1200,930
         echo "Bruno"
+
+    else
+        echo "Notas"
+        cliclick m:800,930
+        cliclick c:800,930
+        sleep 2
+
+        cliclick m:240,150
+        cliclick c:240,150
+        cliclick t:"TESTE AUTOMATIZADO - NOTAS"
     fi
 
     tempo=$((100 + RANDOM % 161))
