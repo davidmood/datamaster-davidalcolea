@@ -2,6 +2,13 @@ while true
 do
     n=$((RANDOM % 6))
 
+    while [ "$n" -eq "$ultimo" ]
+    do
+        n=$((RANDOM % 6))
+    done
+
+    ultimo=$n
+
     if [ "$n" -eq 0 ]; then
         cliclick m:500,930
         cliclick c:500,930
